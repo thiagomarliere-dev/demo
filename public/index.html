@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUNIQUE — Fashion Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="store-page">
+
+  <header class="header">
+    <div class="header-wrap">
+      <nav class="header-nav">
+        <a href="#">Collections</a>
+        <a href="#">Designers</a>
+        <a href="#">Sale</a>
+      </nav>
+      <a href="/" class="logo">YUNIQUE</a>
+      <div class="header-right">
+        <span class="header-reach">120+ countries</span>
+        <button class="cart-btn" id="open-cart" aria-label="Open bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Spring / Summer 2025</p>
+      <h1 class="hero-title">Wear the<br><em>World</em></h1>
+      <p class="hero-sub">Premium fashion, delivered globally.<br>Payments made effortless.</p>
+      <a href="#collection" class="btn-primary">Shop the Collection</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-figure">
+        <div class="hero-figure-inner"></div>
+      </div>
+      <div class="hero-pill">300+ payment methods worldwide</div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+    <div class="section-header">
+      <h2>Featured Pieces</h2>
+      <p>Handpicked for this season</p>
+    </div>
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-visual pv-1">
+          <span class="pv-label">SS25</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="product-cat">Eveningwear</p>
+            <h3>Silk Evening Dress</h3>
+          </div>
+          <div class="product-bottom">
+            <span class="product-price">$285</span>
+            <button class="btn-add" onclick="addToCart({id:1,name:'Silk Evening Dress',price:285,qty:1})">Add to Bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-visual pv-2">
+          <span class="pv-label">LIMITED</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="product-cat">Outerwear</p>
+            <h3>Leather Trench Coat</h3>
+          </div>
+          <div class="product-bottom">
+            <span class="product-price">$420</span>
+            <button class="btn-add" onclick="addToCart({id:2,name:'Leather Trench Coat',price:420,qty:1})">Add to Bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-visual pv-3">
+          <span class="pv-label">NEW</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="product-cat">Knitwear</p>
+            <h3>Cashmere Sweater Set</h3>
+          </div>
+          <div class="product-bottom">
+            <span class="product-price">$195</span>
+            <button class="btn-add" onclick="addToCart({id:3,name:'Cashmere Sweater Set',price:195,qty:1})">Add to Bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-visual pv-4"></div>
+        <div class="product-info">
+          <div>
+            <p class="product-cat">Accessories</p>
+            <h3>Designer Clutch Bag</h3>
+          </div>
+          <div class="product-bottom">
+            <span class="product-price">$165</span>
+            <button class="btn-add" onclick="addToCart({id:4,name:'Designer Clutch Bag',price:165,qty:1})">Add to Bag</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="payments-section">
+    <div class="payments-inner">
+      <h3>One integration.<br>Every market.</h3>
+      <p>Yunique reaches customers in 120+ countries with their preferred payment method — all enabled from a single Yuno integration, with zero code changes.</p>
+      <div class="pm-grid">
+        <div class="pm-item active"><span class="pm-icon">💳</span><span>Credit Card</span></div>
+        <div class="pm-item active"><span class="pm-icon">⚡</span><span>PIX</span></div>
+        <div class="pm-item active"><span class="pm-icon">🏦</span><span>PSE</span></div>
+        <div class="pm-item active"><span class="pm-icon">🅿️</span><span>PayPal</span></div>
+        <div class="pm-item"><span class="pm-icon">🍎</span><span>Apple Pay</span></div>
+        <div class="pm-item"><span class="pm-icon">G</span><span>Google Pay</span></div>
+        <div class="pm-item"><span class="pm-icon">K</span><span>Klarna</span></div>
+        <div class="pm-item more"><span class="pm-icon">+</span><span>290 more</span></div>
+      </div>
+      <p class="pm-note">Enable new payment methods from your Yuno dashboard — no development required.</p>
+    </div>
+  </section>
+
+  <div class="overlay" id="overlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Bag <span id="cart-count-text">(0)</span></h3>
+      <button onclick="closeCart()" class="btn-close" aria-label="Close">✕</button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items">
+      <p class="cart-empty">Your bag is empty</p>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <a href="/checkout.html" class="btn-checkout" id="btn-to-checkout" style="pointer-events:none;opacity:.4">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+  <script src="/js/store.js"></script>
+</body>
+</html>
